@@ -1,8 +1,8 @@
-# Stay Healthy 🌿
+# Stay Healthy 🩺
 
 **Stay Healthy** is a full-featured cross-platform health and wellness application built using Flutter and Python. It empowers users to manage their well-being through AI-driven heart disease prediction, BMI calculation, chatbot interaction, health news, and appointment booking.  
 
-> Developed as a graduation project by **Mohamed Abdel‑Kareem**.
+> Developed as a graduation project by **Mohamed Abd El Kareem**.
 
 ---
 
@@ -55,5 +55,34 @@
 ---
 
 ## 📁 Project Structure
+Stay_Healthy/
+├── lib/ # Flutter app logic (UI, routes, services)
+├── android/ios/ # Native Flutter project targets
+├── app.py # Flask backend server
+├── heart_disease_model.pkl
+├── scaler.pkl
+├── assets/ # Icons, images, logos
+├── test/ # Flutter tests
+├── pubspec.yaml
+└── README.md
 
+
+🧠 How It Works
+User inputs health metrics via Flutter UI (e.g., age, cholesterol, blood pressure).
+
+App posts this data as JSON to Flask API.
+
+Pipelines the data through:
+
+Input scaling (scaler.pkl)
+
+ML prediction (heart_disease_model.pkl)
+
+Returns prediction and displays results in the Flutter interface.
+
+
+
+📞 Contact
+Mohamed Abdel‑Kareem
+📧 mohamedabdelkareem531@gmail.com
 
